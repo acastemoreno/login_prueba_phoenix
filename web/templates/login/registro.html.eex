@@ -1,0 +1,17 @@
+<h2>Registro</h2>
+<%= form_for @changeset, login_path(@conn, :post_registro), fn f -> %>
+  <div class="form_class">
+    <%= label f, :email%>
+    <%= email_input f, :email%>
+    <%= error_tag f, :email %>
+  </div>
+
+  <div class="form_class">
+    <%= label f, :password%>
+    <%= password_input f, :password %>
+    <%= error_tag f, :password %>
+  </div>
+
+  <%= submit "Registrarse", class: "btn btn-success" %>
+
+<% end %>

@@ -1,0 +1,1 @@
+<li><%= link "Login", to: login_path(@conn, :login) %></li>
